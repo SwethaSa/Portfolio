@@ -1,0 +1,362 @@
+
+
+
+  .homepage {
+      display: flex;
+      height: 100vh;
+      color: #fff;
+      background-color: black;
+      position: relative;
+      
+    }
+    .videos {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: "-1";
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: "translate(-50%, -50%)";
+    }
+
+    .carousel-item:hover img {
+      filter: grayscale(100%);
+      transition: filter 0.5s ease-in-out;
+    }
+    
+    
+    .left {
+      width: 50%;
+      padding: 0 20px;
+      position: relative;
+  z-index: 1;
+    }
+    
+    .right {
+      width: 50%;
+      position: relative;
+  z-index: 1;
+    }
+    
+    .greeting {
+      margin-left: 100px;
+    }
+    
+    .hello {
+      font-size: 5rem;
+      font-weight: bold;
+      animation: slide 1s ease-in-out infinite alternate;
+      color: #ffffff;
+    }
+    
+    .name {
+      font-size: 2rem;
+      margin-top: -30px;
+      animation: typing 3s steps(20) forwards;
+      color: #fff;
+    }
+    
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(10px);
+      }
+    }
+    
+    .text {
+      font-size: 1.5rem;
+      margin-left: 120px;
+      line-height: 40px;
+      display: flex;
+    }
+    
+    .image {
+      width: 270px;
+      height: 400px;
+      object-fit:cover;
+      margin-top: 180px;
+      margin-left: 80px;
+      border: 40px solid  #ffffff;
+      box-shadow: inset 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #BC13Fe;
+      animation: fade-in 1s ease-in-out forwards, move-up 1s ease-in-out forwards;
+      padding: 10px;
+  }
+
+  
+
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move-up {
+    0% {
+      transform: translateY(200px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .line {
+    height: 130px;
+    display: flex;
+    border-left: 2px solid #fff;
+    margin-top: 60px;
+    margin-left: 100px;
+    background-color: #FF007F;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 3s ease-in-out forwards;
+  }
+
+  .card{
+    text-align:center;
+    padding:8px;
+    box-shadow: inset 0 0 30px #fff,  0 0 10px #fff;
+    box-sizing: border-box;
+  }
+  
+
+  .card p{
+    font-size:medium;
+    text-align: left;
+    font-family: 'Bad Script';
+    font-size:x-large
+
+
+  }
+
+  .card:hover{
+      cursor: pointer;
+  }
+
+  .gitlink{
+    color: #fff;
+    height: 45px;
+    width:45px;
+    margin-top: 100px;
+    transition: color 0.3s ease-in;
+    margin-right: 10px;
+
+  }
+
+  .maillink{
+    color: #fff;
+    height: 50px;
+    width:50px;
+    margin-left: 2px;
+    margin-top: 100px;
+    transition: color 0.3s ease-in;
+
+  }
+
+
+  .dlink{
+    color: #fff;
+    height: 38px;
+    width:50px;
+    margin-left: 28px;
+    margin-top: 10px;
+    transition: color 0.3s ease-in;
+
+  }
+  @keyframes rotate {
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:rgb(255, 255, 255);
+    color: #333;
+  }
+  #works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    color: #333;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    color: #333;
+  }
+
+
+  .button {
+    
+    color:#fff;
+    display: contents;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    top: 0;
+  right: 0;
+  font-family: 'Bad Script', cursive;
+  font-size: xx-large;
+
+  } 
+  .link{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5cm;
+    position: relative;
+  z-index: 1;
+  float: right;
+  font-family: 'Bad Script', cursive;
+  background: linear-gradient(to right,  #FF007F, #BC13Fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .button:hover{
+
+    cursor: pointer;
+  }
+
+  .names{
+    font-family: 'Bad Script', cursive;
+    background: linear-gradient(to top,  #FF007F, #BC13Fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .names:hover{
+    cursor: pointer;
+  }
+
+  .social-media{
+    animation: fade-in 1s ease-in-out forwards, move-up 2s ease-in-out forwards;
+    color: #FF007F;
+    margin-right: 1cm;
+  }
+  
+  @media (max-width: 1000px) {
+    .homepage {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .left {
+      width: 100%;
+    }
+    
+    .right {
+      margin-left: 6cm;
+      margin-top: 30px;
+      width: 100%;
+    }
+    
+    .image {
+      margin-top: 0;
+    }
+
+    .image {
+      width: 150px;
+      height: 200px;
+      object-fit:fill;
+      margin-left: 0px;
+      border: 10px solid  #ffffff;
+      box-shadow: inset 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #BC13Fe;
+      animation: fade-in 1s ease-in-out forwards, move-up 1s ease-in-out forwards;
+      align-items:start;
+  }
+    
+   .maillink, .gitlink, .dlink{
+    color: #FF007F;
+    margin-top: 5px;
+    display: block;
+   }
+
+   .button{
+    font-size:x-large;
+   }
+   
+   .dlink{
+    height: 38px;
+    width:50px;
+    margin-left: 2px;
+    margin-top: 10px;
+    transition: color 0.3s ease-in;
+
+  }
+
+  .hello {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 0px;
+      
+    }
+    
+    .name {
+      font-size: 2rem;
+      margin-top: -30px;
+      animation: typing 3s steps(20) forwards;
+      color: #fff;
+    }
+
+    .link{
+      position:fixed;
+      margin-left: 1cm;
+    margin-top: 7cm;
+    width: 100%;
+
+    }
+
+    .card{
+      text-align:center;
+      padding:0px;
+      box-shadow: inset 0 0 30px #fff,  0 0 10px #fff;
+      box-sizing: border-box;
+    }
+    
+  
+    .card p{
+      font-size:large;
+      text-align: left;
+      font-family: 'Bad Script';
+      line-height: 25px;
+      margin-bottom: 0px;
+  
+    }
+
+    .names{
+      font-size: 40px;
+      margin-top: 1px;
+    }
+  
+  }
+
+  @media (max-width: 960) {
+
+   
+    .link{
+      position:fixed;
+      margin-left: 20cm;
+    margin-top: 7cm;
+
+    }
+    } 
